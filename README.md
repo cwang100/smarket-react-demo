@@ -25,10 +25,17 @@ I used async action provided by redux-thunk to handle ajax request and get data 
 The api provided contains three main datasets: Events+details, Contracts, and Contract groups. Each contract can belong to many contract groups, each contract group belongs to an event, and for each sports type, there are multiple events. The left toolbar contains all the event types, and the middle container contains all the events that belong to that type. By default, the middle container shows all the popular events, and after user select view detail, the middle container will change to display detailed information of current event. Below those details, it displays the contract informations that are extracted from the conrtact group of that event. Horse-racing contracts have more information than other contracts, and the contract table will auto resize and display all of them. 
 ## What each folder do
 public: all the static resources are placed in this folder.
+
 src: all the dynamic javaScript are placed in this folder. 
+
 src/actions: where the redux actions are placed.
+
 src/reducers: where the redux reducers are placed.
+
 src/components: where all the react components are placed. The whole app is made with the combination of those components.
+
 App.js: the main entrance of react. This file combines all the resources in different folder together.
+
 Index.js, registerServiceWorker.js: auto generated file. react-gh-page deploy entrance.
+
 App.test.js: placeholder for app tests. No test is currently implemented.
